@@ -1,5 +1,5 @@
 # Image-Downloader
-This project is to develope an Image Downloader python program which can automatically download images from ecommerce website to the local address, as well as save infomation of all the images into SQL database.
+This project is to develop an Image Downloader python program which can automatically download images from ecommerce website to the local address, as well as save infomation of all the images into SQL database.
 
 In order to run this project, you can clone the project into your laptop, and type the following command in your terminal:
 

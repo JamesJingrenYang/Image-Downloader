@@ -58,7 +58,7 @@ def down_pics(url_list,addr):
         i+=1
         
     ## Save these images structured in a tabular format
-    df1 = pd.DataFrame({'Image_name':name_list,'Image_url':url_list,                        'Width':width_list,'Height':height_list,'Color_channels':color_list,                  'Download_datetime':down_time_list,'Image_location':local_list})
+    df1 = pd.DataFrame({'Image_name':name_list,'Image_url':url_list,                       'Width':width_list,'Height':height_list,'Color_channels':color_list,            'Download_datetime':down_time_list,'Image_location':local_list})
     
     return df1
     
@@ -80,6 +80,7 @@ def select(query):
 # Eg. 100+ images from Amazon 100 Best sellers in women clothings page
 url1 = 'https://www.amazon.com/Best-Sellers-Womens-Clothing/zgbs/fashion/1040660/ref=zg_bs_nav_2_7147440011'
 url2 = 'https://www.amazon.com/Best-Sellers-Womens-Clothing/zgbs/fashion/1040660/ref=zg_bs_pg_2?_encoding=UTF8&pg=2'
+
 result1 = requests.get(url1)
 url_list = down_urls(result1)
 result2 = requests.get(url2)
@@ -106,10 +107,6 @@ df_2 = down_pics(urls_list,address)
 engine = create_engine('sqlite:///foo.db')
 df_2.to_sql('image_info', engine, if_exists='replace')
 print('Sucessfully download 100+ images and save their info into db!')
-
-
-# In[8]:
-
 
 # ## Table 1: 
 # print(df_1)

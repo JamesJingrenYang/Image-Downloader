@@ -5,7 +5,7 @@ To run this project, you can clone the project into your laptop, and type the fo
 
 #### python download_image.py + 'Your local address'
 
-* *Your local address' is the address that you want to download those images in your laptop.*
+* *'Your local address' is the address that you want to download those images in your laptop.*
 * *The code is using an example of Amazon Best Seller 100+ women clothes website as an example*
 
 #### P.S
